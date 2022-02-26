@@ -1661,6 +1661,37 @@ buttton.rounded-rectangle-1-copy-5-holder:hover {
   text-align: center;
 }
 
+.slick-dots { 
+  float: left !important;
+  position: absolute !important;
+  width: 98px !important;
+  margin-top: -371px;
+  margin-left: -45px;  
+}
+
+.slick-dots li button{
+  margin: 0 0 0 50px;
+  color: #999999;
+  font-size: 1.125rem;
+  font-weight: bold;
+  border: none;
+  background-color: transparent;
+}
+
+.slick-dots li{
+  margin: 47px 0 0;
+  position: relative;
+}
+
+.slick-dots .slick-active{
+  zoom: 1;
+}
+.slick-dots .slick-active button{
+  color: #00a7b4 ;
+  font-size: 2.25rem ;
+  font-weight: bold ;
+}
+
 @media screen and (max-width: 600px) {
   .nav a {
     float: none;
