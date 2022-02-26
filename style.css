@@ -175,7 +175,7 @@ body {
   margin: 0 auto;
   min-height: 3558px;
   position: relative;
-  width: 1600px;
+  width: 100%;
 }
  
 .bg {
@@ -189,15 +189,15 @@ body {
   margin-left: -800px;
 }
 .color-fill-1-holder {
-  left: 50%;
+  left: 42%;
   min-height: 3558px;
   padding: 33px 0 0;
   position: absolute;
   top: 0;
-  width: 1600px;
-
+  width: 100%;
   background: #ffffff;
   margin-left: -800px;
+  overflow: hidden;
 }
 .header {
   margin: 0 auto;
@@ -343,7 +343,7 @@ buttton.rounded-rectangle-1-copy-5-holder:hover {
   position: relative;
   width: 980px;
 }
-.col-12 {
+.col-div-12 {
   float: left;
   margin: 83px -37px 0 0;
   position: relative;
@@ -365,7 +365,7 @@ buttton.rounded-rectangle-1-copy-5-holder:hover {
   min-height: 45px;
   padding: 14px 23px;
   position: relative;
-  width: 139px;
+  width: 155px;
   
   -webkit-border-radius: 22.5px;
   -moz-border-radius: 22.5px;
@@ -549,12 +549,14 @@ buttton.rounded-rectangle-1-copy-5-holder:hover {
   position: relative;
   /* background:linear-gradient(0deg, rgb(34,61,87), rgba(255, 255, 255, 0.3)), url(images/pexels-photo-777155.png); */
   background: url(images/Rectangle_2_copy_15.png) no-repeat;
+  left: 9%;
 }
 .group-27 {
   /*F*/
   display: table;
   margin: 0 auto;
   position: relative;
+  right: 9%;
 }
 .text-11 {
   color: #ffffff;
@@ -1567,7 +1569,7 @@ buttton.rounded-rectangle-1-copy-5-holder:hover {
   
   line-height: 36px;
 }
-.col-11 {
+.col-div-11 {
   float: left;
   margin: 11px 0 0 59px;
   position: relative;
@@ -1686,24 +1688,92 @@ buttton.rounded-rectangle-1-copy-5-holder:hover {
 .slick-dots .slick-active{
   zoom: 1;
 }
+
+.slick-dots .slick-active:before {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 5px;
+  background: #00a7b4;
+  left: 0;
+  top: 50%;
+  position: absolute;
+}
+
 .slick-dots .slick-active button{
   color: #00a7b4 ;
   font-size: 2.25rem ;
   font-weight: bold ;
 }
 
-@media screen and (max-width: 600px) {
+.navbar{
+  padding-left: 10%;
+    padding-top: 2% !important;
+}
+
+.navbar-nav li
+{
+  font-weight: bold ;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#mobilenav {
+  display: none;
+}
+
+@media screen and (max-device-width: 1440px) {
   .nav a {
     float: none;
     width: 100%;
   }
+  .color-fill-1-holder {
+    left: 800px;
+    overflow: hidden;
+  }
+  .group-17{
+    left: 0px;
+  }
+  .group-27{
+    right: 0px;
+  }
 }
 
-@media screen and (max-width: 600px) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .nav a {
+    float: none;
+    width: 100%;
+  }
+  .color-fill-1-holder {
+    left: 800px;
+    overflow: hidden;
+    width: unset;
+  }
+  .group-17{
+    left: 0px;
+  }
+  .group-27{
+    right: 0px;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .column {
     width: 100%;
   }
-} 
+
+  #fullnav {
+    display: none;
+  } 
+  
+  #mobilenav{
+    display: block;
+    left: 60%;
+    top: -43px;
+  }
+  #navbarToggleExternalContent .nav-link {
+    color: unset;
+  } 
 
 @media screen and (max-width: 425px){
   .nav a {
